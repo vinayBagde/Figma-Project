@@ -610,36 +610,67 @@ footer .copyright {
     height: calc(100% + 80px);
   }
 
-   .testimonials-section .testimonial-card:last-child {
+  .testimonials-section .testimonial-card:last-child {
     transform: translateX(0px);
     margin-bottom: 0;
-   }
+  }
 
-   .testimonials-section .desktop-btn {
+  .testimonials-section .desktop-btn {
     display: none;
-   }
+  }
 
-   .testimonials-section .mobile-btn {
+  .testimonials-section .mobile-btn {
     display: block;
     align-self: flex-end;
     order: 3;
-   }
+  }
 
-   .testimonials-section .right {
+  .testimonials-section .right {
     order: 1;
+  }
+
+  .testimonials-section .left {
+    order: 2;
+  }
+
+  .testimonials-section .right p {
+    display: inline;
+  }
+
+  .testimonials-section h2 {
+    margin-bottom: 20px;
+  }
+
+  .courses-section .course-cards {
+    flex-direction: column;
+    gap: 80px;
+    margin: 0;
+  }
+
+  .courses-section .course-card {
+    margin: 0;
    }
 
-    .testimonials-section .left {
-      order: 2;
-    }
+   .courses-section h2 {
+    margin-bottom: 40px;
+   }
 
-    .testimonials-section .right p {
-      display: inline;
-    }
+  .courses-section .course-cards img {
+    height: 260px;
+    object-fit: cover;
+  }
 
-    .testimonials-section h2 {
-      margin-bottom: 20px;
-    }
+ 
 
+  .courses-section .course-card h3 {
+    font-size: 24px;
+  }
+
+  .courses-section .wrapper .btn {
+    right: 100px;
+  }
+
+  .courses-section .course-card:last-child {
+    margin-bottom: 50px;
+  }
 }
-
