@@ -97,7 +97,6 @@ nav ul {
 }
 
 nav ul li a {
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 16px;
   text-decoration: none;
@@ -114,21 +113,21 @@ nav ul li a {
   justify-content: space-between;
   padding-top: 60px;
   position: relative;
+  color: #fff;
 }
 
 .hero-section .left h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 50px;
-  color: #fff;
+
   margin-bottom: 0;
 }
 
 .hero-section .left p {
-  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 16px;
-  color: #fff;
+
   margin-bottom: 30px;
   width: 457px;
 }
@@ -151,6 +150,7 @@ nav ul li a {
 .achievement-card {
   position: absolute;
   min-width: 200px;
+  color: var(--dark-blue-color);
 }
 
 .achievement-card .content {
@@ -179,22 +179,26 @@ nav ul li a {
 }
 
 .achievement-card h3 {
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 36px;
-  color: var(--dark-blue-color);
   margin: 0;
   text-align: center;
   width: 100%;
+  flex: 1;
+}
+
+.achievement-card img {
+  flex: 1;
+  height: 42px;
+  margin-left: -24px;
 }
 
 .achievement-card p {
-  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 16px;
-  color: var(--dark-blue-color);
   margin-top: -8px;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .achievement-card .bg {
@@ -226,7 +230,6 @@ h2.light {
 }
 
 section p {
-  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: var(--dark-blue-color);
@@ -435,7 +438,6 @@ section p {
 }
 
 .app-section .app-btn span {
-  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 20px;
   color: #fff;
@@ -488,12 +490,12 @@ footer form {
 }
 
 footer form input {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 200%;
   border-radius: 8px;
-  padding: 8px 32px;
+  padding: 8px 160px 8px 32px;
   border: none;
   width: 100%;
   color: #000;
@@ -517,6 +519,11 @@ footer form .submit-btn {
 
 footer .copyright {
   margin-top: 36px;
+}
+
+nav.mobile-nav,
+.mobile-menu-container {
+  display: none;
 }
 
 @media (max-width: 1100px) {
@@ -835,6 +842,10 @@ footer .copyright {
     text-align: center;
   }
 
+   footer form input {
+    padding: 8px 32px;
+  }
+
   footer .links-container .links:last-child {
     grid-column: 1 / span 1;
   }
@@ -853,4 +864,5 @@ footer .copyright {
     margin-top: 80px;
     text-align: center;
   }
+ 
 }
